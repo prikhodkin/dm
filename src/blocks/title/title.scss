@@ -1,0 +1,23 @@
+.title {
+  margin: 0;
+  font-weight: 800;
+  color: #ffffff;
+
+  span {
+    padding: 2px 23px 2px 13px;
+    background-color: #000000;
+    box-decoration-break: clone;
+  }
+
+  &--promo {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    &--promo {
+      font-size: 80px;
+    }
+  }
+}
