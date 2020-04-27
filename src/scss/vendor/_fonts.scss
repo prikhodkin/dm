@@ -1,7 +1,19 @@
 @font-face {
+  font-weight: 300;
+  font-family: "Proxima Nova";
+  src: url("../../fonts/ProximaNova-Light.woff2") format("woff2"), url("../../fonts/ProximaNova-Light.woff") format("woff");
+}
+
+@font-face {
   font-weight: 400;
   font-family: "Proxima Nova";
   src: url("../../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../../fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "Proxima Nova";
+  src: url("../../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../../fonts/ProximaNova-Semibold.woff") format("woff");
 }
 
 @font-face {
@@ -17,7 +29,25 @@
 }
 
 @font-face {
+  font-weight: 900;
+  font-family: "Proxima Nova";
+  src: url("../../fonts/ProximaNova-Black.woff2") format("woff2"), url("../../fonts/ProximaNova-Black.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Raleway";
+  src: url("../../fonts/Raleway-Regular.woff2") format("woff2"), url("../../fonts/Raleway-Regular.woff") format("woff");
+}
+
+@font-face {
   font-weight: 600;
   font-family: "Raleway";
   src: url("../../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../../fonts/Raleway-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Raleway";
+  src: url("../../fonts/Raleway-Bold.woff2") format("woff2"), url("../../fonts/Raleway-Bold.woff") format("woff");
 }
