@@ -1,25 +1,32 @@
 .menu__btn {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  font-size: 0;
+  position: relative;
+  z-index: 100;
   width: 30px;
   height: 30px;
-  border: none;
   padding: 0;
+  font-size: 0;
+  background: $yellow;
+  border: none;
+  border-radius: 50%;
   cursor: pointer;
+  appearance: none;
 }
 
 .menu__hamburger {
-  display: block;
   position: relative;
+  display: block;
   height: 2px;
+  margin-right: 6px;
+  margin-left: 6px;
   background-color: #000000;
   transition: all 0.3s;
-  &::before, &::after {
+
+  &::before,
+  &::after {
     content: "";
-    display: block;
     position: absolute;
     left: 0;
+    display: block;
     width: 100%;
     height: inherit;
     background-color: #000000;
@@ -27,21 +34,85 @@
   }
 
   &::before {
-    top: -8px;
+    top: -5px;
   }
+
   &::after {
-    bottom: -8px;
+    bottom: -5px;
   }
 
   &--active {
     background-color: transparent;
+
     &::before {
       top: 0;
       transform: rotate(45deg);
     }
+
     &::after {
       bottom: 0;
       transform: rotate(-45deg);
+    }
+  }
+}
+
+.menu__list {
+  @include list-reset;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: none;
+  width: calc(100% - 40px);
+  margin: 0;
+  padding: 73px 20px 35px;
+  background-color: #ffffff;
+  box-shadow: 0 23px 29px 0 rgba(0, 0, 0, 0.16);
+}
+
+.menu__item {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $yellow;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__list {
+    position: relative;
+    top: unset;
+    left: unset;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    box-shadow: unset;
+  }
+
+  .menu__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  .menu__btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1320px) {
+  .menu__item {
+    &:not(:last-child) {
+      margin-right: 64px;
     }
   }
 }
