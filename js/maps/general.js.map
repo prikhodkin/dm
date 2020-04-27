@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","sourcesContent":[],"file":"../general.js"}
+{"version":3,"sources":["general.js"],"names":["$","click","toggleClass","slideToggle"],"mappings":"AAAA;;AACAA,CAAC,CAAC,YAAD,CAAD,CAAgBC,KAAhB,CAAsB,YAAM;AACxBD,EAAAA,CAAC,CAAC,kBAAD,CAAD,CAAsBE,WAAtB,CAAkC,yBAAlC;AACAF,EAAAA,CAAC,CAAC,aAAD,CAAD,CAAiBG,WAAjB;AACH,CAHD","sourcesContent":["\"use strict\"\n$('.menu__btn').click(() => {\n    $('.menu__hamburger').toggleClass('menu__hamburger--active');\n    $('.menu__list').slideToggle();\n});"],"file":"../general.js"}
