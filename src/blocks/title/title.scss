@@ -1,4 +1,5 @@
 .title {
+  display: inline-block;
   margin: 0;
   font-weight: 800;
   color: #ffffff;
@@ -12,12 +13,30 @@
   &--promo {
     font-size: 35px;
   }
+
+  &--section {
+    display: inline-block;
+    font-size: 34px;
+  }
 }
 
 @media (min-width: 768px) {
   .title {
     &--promo {
       font-size: 80px;
+
+      span {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+    }
+
+    &--section {
+      font-size: 48px;
+
+      span {
+        padding: 10px 40px;
+      }
     }
   }
 }

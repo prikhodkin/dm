@@ -1,0 +1,29 @@
+.rotate {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 6px;
+    margin-right: 15px;
+    background-image: url("../../img/rotate.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(90deg);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 1px;
+    margin-left: 20px;
+    background: rgba(#ffffff, 0.8);
+  }
+}
