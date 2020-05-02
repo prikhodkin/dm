@@ -1,12 +1,12 @@
-if($(window).width() < 1320) {
+if($(window).width() < 1260) {
   $('.service__list').slick({
     nextArrow: ".service__arrow--right",
     prevArrow: ".service__arrow--left"
   })
 
-  $('.count__small').html($(".service__list").slick("getSlick").slideCount)
+  $('.service__control .count__small').html($(".service__list").slick("getSlick").slideCount)
   $(".service__list").on("afterChange", function(event, slick, currentSlide, nextSlide){
-    $(".count__big").html(currentSlide + 1);
+    $(".service__control .count__big").html(currentSlide + 1);
   });
 
 }

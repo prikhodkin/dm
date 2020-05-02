@@ -96,4 +96,49 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+
+  &--yellow {
+    .arrow__button {
+      &--right {
+        &:hover {
+          &::before {
+            background-color: $yellow;
+          }
+
+          .arrow__circle {
+            background-color: transparent;
+            background-image: url("../../img/slider__right-arrow--yellow.png");
+          }
+        }
+      }
+
+      &--left {
+        &:hover {
+          &::after {
+            background-color: $yellow;
+          }
+
+          .arrow__circle {
+            background-image: url("../../img/slider__left-arrow--yellow.png");
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .arrow__button {
+    &--right {
+      &::before {
+        width: 90px;
+      }
+    }
+
+    &--left {
+      &::after {
+        width: 90px;
+      }
+    }
+  }
 }

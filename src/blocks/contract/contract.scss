@@ -1,0 +1,99 @@
+.contract {
+  padding: 55px 20px;
+}
+
+.contract__title {
+  span {
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+
+  margin-bottom: 50px;
+}
+
+.contract__desc {
+  font-weight: 400;
+
+  font-size: 20px;
+
+  b {
+    font-weight: 600;
+  }
+}
+
+.contract__img {
+  width: calc(100% + 40px);
+  margin-top: -70px;
+  margin-right: -20px;
+  margin-bottom: -30px;
+  margin-left: -20px;
+}
+
+.contract__list {
+  @include page-wrapper;
+  margin: 0;
+}
+
+.contract__item {
+  display: flex;
+  align-items: flex-start;
+
+  p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    min-width: 14px;
+    height: 16px;
+    margin-right: 20px;
+    background-image: url("../../img/about__item-arrow.png");
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 768px) {
+  .contract {
+    padding-top: 74px;
+    padding-bottom: 74px;
+  }
+
+  .contract__img {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contract {
+    @include page-wrapper;
+    background-image: url("../../img/contract__bg--desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .contract__desc {
+    max-width: 630px;
+    margin-bottom: 100px;
+    font-size: 24px;
+  }
+
+  .contract__item {
+    max-width: 440px;
+  }
+
+  .contract__list {
+    margin-bottom: 65px;
+  }
+
+  .contract__title {
+    margin-bottom: 110px;
+    margin-left: 85px;
+
+    span {
+      font-size: 80px;
+    }
+  }
+}

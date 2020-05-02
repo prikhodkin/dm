@@ -1,0 +1,288 @@
+.about {
+  padding: 30px 20px 40px;
+}
+
+.about__img {
+  display: block;
+  width: 100%;
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.about__title {
+  margin-left: 16px;
+}
+
+.about__name {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1.2;
+  color: $dark-yellow;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 15px;
+    margin-top: 6px;
+    margin-right: 10px;
+    background-image: url("../../img/about__name-arrow.png");
+    background-size: contain;
+  }
+}
+
+.about__position {
+  max-width: 190px;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-left: calc(16px + 23px);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.about__list {
+  @include list-reset;
+  margin: 0;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 25px 20px 40px;
+  background-color: $grey;
+}
+
+.about__item {
+  display: flex;
+  font-weight: 300;
+
+  p {
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    min-width: 13px;
+    height: 15px;
+    margin-top: 3px;
+    margin-right: 15px;
+    background-image: url("../../img/about__item-arrow.png");
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  b {
+    font-weight: 600;
+  }
+}
+
+.about__advantage {
+  display: none;
+}
+
+.about__quote {
+  position: relative;
+  padding: 20px;
+  background-color: $yellow;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    display: block;
+    width: 29px;
+    height: 25px;
+    background-image: url("../../img/about__quote-circle.png");
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    b {
+      font-weight: 600;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding-top: 74px;
+    padding-bottom: 104px;
+  }
+
+  .about__title {
+    margin-bottom: 70px;
+    margin-left: 0;
+  }
+
+  .about__img {
+    &--desktop {
+      display: block;
+      width: 273px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .about__inner {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .about__list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .about__content {
+    margin-top: -90px;
+    margin-left: 10px;
+  }
+
+  .about__name {
+    margin-left: 0;
+    font-size: 48px;
+
+    &::before {
+      width: 26px;
+      height: 30px;
+      margin-top: 8px;
+    }
+  }
+
+  .about__position {
+    max-width: unset;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about {
+    @include page-wrapper;
+  }
+
+  .about__content {
+    margin-top: -140px;
+    margin-left: 85px;
+  }
+
+  .about__rotate {
+    justify-content: flex-end;
+  }
+
+  .about__list {
+    margin-left: -130px;
+    padding: 55px 60px;
+  }
+
+  .about__item {
+    font-size: 20px;
+    line-height: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &::before {
+      margin-top: 6px;
+    }
+  }
+
+  .about__name {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+
+  .about__position {
+    margin-bottom: 50px;
+  }
+
+  .about__img {
+    &--desktop {
+      width: 525px;
+    }
+  }
+
+  .about__advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 39px;
+      height: 39px;
+      margin-right: 19px;
+      background-image: url("../../img/about__thumbs.png");
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .about__quote {
+    margin-right: 230px;
+    margin-left: -485px;
+    padding: 35px 80px 35px 70px;
+
+    &::before {
+      top: -48px;
+      left: 70px;
+      width: 55px;
+      height: 48px;
+      background-image: url("../../img/about__quote-circle--desktop.png");
+    }
+
+    p {
+      position: relative;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -39px;
+        display: block;
+        width: 20px;
+        height: 19px;
+        background-image: url("../../img/quote__left.png");
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 235px;
+        bottom: 5px;
+        display: block;
+        width: 20px;
+        height: 19px;
+        background-image: url("../../img/quote__right.png");
+      }
+    }
+  }
+}
+
