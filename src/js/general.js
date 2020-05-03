@@ -2,3 +2,7 @@
 //= "../blocks/service/service.js"
 //= "../blocks/case/case.js"
 //= "../blocks/stages/stages.js"
+//= "../blocks/prices/prices.js"
+//= "../blocks/include/include.js"
+//= "../blocks/reviews/reviews.js"
+//= "../blocks/header/header.js"

@@ -125,6 +125,51 @@
       }
     }
   }
+
+  &--dark {
+    .arrow__button {
+      &--right {
+        .arrow__circle {
+          background-color: $yellow;
+        }
+
+        &:hover {
+          &::before {
+            background-color: $yellow;
+          }
+
+          .arrow__circle {
+            background-color: transparent;
+            background-image: url("../../img/slider__right-arrow--yellow.png");
+          }
+        }
+      }
+
+      &--left {
+        &:hover {
+          &::after {
+            background-color: $yellow;
+          }
+
+          .arrow__circle {
+            background-image: url("../../img/slider__left-arrow--yellow.png");
+          }
+        }
+      }
+    }
+
+    .count__big {
+      color: #000000;
+    }
+
+    .count__separator {
+      color: #000000;
+    }
+
+    .count__small {
+      color: #000000;
+    }
+  }
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,17 @@
+.input {
+  display: block;
+  height: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  background: transparent;
+  border: none;
+  border-bottom: 5px solid $yellow;
+  appearance: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

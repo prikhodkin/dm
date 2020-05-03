@@ -1,7 +1,8 @@
 $('.stages__list').slick({
   nextArrow: ".stages__arrow--right",
   prevArrow: ".stages__arrow--left",
-  fade: true
+  fade: true,
+  adaptiveHeight: true
 })
 
 $('.stages .count__small').html($(".stages__list").slick("getSlick").slideCount)
