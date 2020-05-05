@@ -1,0 +1,50 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  font-weight: 600;
+  font-size: 17.5px;
+  font-family: $second-font;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  appearance: none;
+
+  &:hover {
+    .button__arrow {
+      background-color: transparent;
+      background-image: url("../../img/button__arrow--h-mobile.png");
+    }
+  }
+}
+
+.button__arrow {
+  content: "";
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: 8px;
+  background-color: #000000;
+  background-image: url("../../img/button__arrow--mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-color: $yellow;
+    border-radius: 50%;
+    transform: translate(-20px, -20px);
+    transition: all 0.3s;
+  }
+}

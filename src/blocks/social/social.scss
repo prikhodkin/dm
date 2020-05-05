@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+
+  @include list-reset;
+  margin: 0;
+}
+
+.social__item {
+  content: "";
+  display: block;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &--vk {
+    background-image: url("../../img/vk.png");
+
+    &:hover {
+      background-image: url("../../img/vk--hover.png");
+    }
+  }
+
+  &--inst {
+    background-image: url("../../img/inst.png");
+
+    &:hover {
+      background-image: url("../../img/inst--hover.png");
+    }
+  }
+}

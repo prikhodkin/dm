@@ -1,0 +1,50 @@
+.rotate {
+  display: none;
+}
+
+@media (min-width: 1170px) {
+  .rotate {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 800;
+    font-size: 18px;
+    color: #ffffff;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 6px;
+      margin-right: 15px;
+      background-image: url("../../img/rotate.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: rotate(90deg);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 1px;
+      margin-left: 20px;
+      background: rgba(#ffffff, 0.8);
+    }
+
+    &--yellow {
+      color: $yellow;
+
+      &::after {
+        background: $yellow;
+      }
+
+      &::before {
+        background-image: url("../../img/about__item-arrow.png");
+        background-size: contain;
+        transform: rotate(0);
+      }
+    }
+  }
+}
+

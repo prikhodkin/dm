@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+    box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.04);
+  }
+}
+
+.header__phone {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.header__menu {
+  margin-top: -9px;
+}
+
+.header__logo {
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .header__phone {
+    font-size: 18px;
+  }
+
+  .header__logo {
+    width: 190px;
+  }
+
+  .header__menu {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1320px) {
+  .header {
+    @include page-wrapper;
+  }
+
+  .header__phone {
+    display: inline-flex;
+    align-items: center;
+
+    span {
+      margin-right: 5px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 29px;
+      height: 29px;
+      margin-right: 20px;
+      background: #000000 url("../../img/call.png") no-repeat center;
+      border-radius: 50%;
+    }
+  }
+}

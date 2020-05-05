@@ -1,0 +1,17 @@
+body {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: $main-font;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
