@@ -24,8 +24,11 @@
     <div class="footer__right">
       <div class="footer__text"><p>Если у вас остались вопросы, оставьте свои данные, и я свяжусь с вами в <b>ближайшее время</b></p></div>
       <form action="" class="footer__form form">
-        <input type="text" class="footer__input input" placeholder="Имя">
-        <input type="text" class="footer__input input" placeholder="Телефон">
+        <input type="hidden" name="project_name" value="DM">
+        <input type="hidden" name="admin_email" value="dmilchenkov@gmail.com">
+        <input type="hidden" name="form_subject" value="Остались вопросы | DM">
+        <input name="Имя" type="text" class="footer__input input" placeholder="Имя">
+        <input name="Телефон" type="text" class="footer__input input" placeholder="Телефон" required>
         <button class="form__button button">
           Перезвонить мне
           <span class="button__arrow"></span>

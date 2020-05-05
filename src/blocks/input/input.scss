@@ -8,6 +8,7 @@
   border: none;
   border-bottom: 5px solid $yellow;
   appearance: none;
+  border-radius: 0;
 
   &::placeholder {
     font-weight: 400;

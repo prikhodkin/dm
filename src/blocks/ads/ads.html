@@ -10,9 +10,12 @@
     <img src="../../img/ads__img.png" class="ads__img">
     <p class="ads__text">Оставьте данные, и на указанный E-mail я вышлю инструкцию для получения доступа к <b>бесплатному аудиту</b></p>
     <form action="" class="ads__form form">
-      <input type="text" class="input" placeholder="Имя">
-      <input type="tel" class="input" placeholder="Телефон">
-      <input type="email" class="input" placeholder="E-mail">
+      <input type="hidden" name="project_name" value="DM">
+      <input type="hidden" name="admin_email" value="dmilchenkov@gmail.com">
+      <input type="hidden" name="form_subject" value="Получить аудит | DM">
+      <input name="Имя" type="text" class="input" placeholder="Имя">
+      <input name="Телефон" type="tel" class="input" placeholder="Телефон" required>
+      <input name="E-mail" type="email" class="input" placeholder="E-mail" required>
       <button class="button">
         Получить аудит
         <span class="button__arrow"></span>

@@ -6,3 +6,5 @@
 //= "../blocks/include/include.js"
 //= "../blocks/reviews/reviews.js"
 //= "../blocks/header/header.js"
+//= "../blocks/form/form.js"
+//= "../blocks/modal/modal.js"
